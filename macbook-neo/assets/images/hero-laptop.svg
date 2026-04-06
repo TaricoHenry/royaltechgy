@@ -1,0 +1,39 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAFBFF"/>
+      <stop offset="1" stop-color="#EEF3FF"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="361" y1="118" x2="874" y2="544" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7F9"/>
+      <stop offset="0.33" stop-color="#A78BFA"/>
+      <stop offset="0.66" stop-color="#C7F464"/>
+      <stop offset="1" stop-color="#FFB3C6"/>
+    </linearGradient>
+    <linearGradient id="body" x1="280" y1="162" x2="914" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8EDF5"/>
+      <stop offset="1" stop-color="#C9D2DF"/>
+    </linearGradient>
+    <filter id="shadow" x="168" y="74" width="865" height="719" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="28"/>
+      <feGaussianBlur stdDeviation="40"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0705882 0 0 0 0 0.14902 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="56" fill="url(#bg)"/>
+  <circle cx="980" cy="135" r="108" fill="#DFF7A1" fill-opacity="0.9"/>
+  <circle cx="207" cy="175" r="88" fill="#DCE7FF"/>
+  <g filter="url(#shadow)">
+    <path d="M302 170C302 151.222 317.222 136 336 136H862C880.778 136 896 151.222 896 170V528H302V170Z" fill="#0F172A"/>
+    <rect x="326" y="160" width="546" height="341" rx="24" fill="url(#screen)"/>
+    <path d="M242 558H957L873 676C869.247 681.303 863.164 684.455 856.668 684.455H342.332C335.836 684.455 329.753 681.303 326 676L242 558Z" fill="url(#body)"/>
+    <path d="M182 558H1018C1023.52 558 1028 562.477 1028 568V572C1028 587.464 1015.46 600 1000 600H200C184.536 600 172 587.464 172 572V568C172 562.477 176.477 558 182 558Z" fill="#D9E1EC"/>
+    <rect x="536" y="567" width="128" height="9" rx="4.5" fill="#B9C5D4"/>
+  </g>
+  <text x="126" y="747" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800">Hello, Neo.</text>
+  <text x="126" y="808" fill="#667085" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="500">Original launch artwork for the Guyana storefront.</text>
+</svg>

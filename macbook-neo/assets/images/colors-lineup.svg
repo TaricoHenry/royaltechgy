@@ -1,0 +1,23 @@
+<svg width="1200" height="540" viewBox="0 0 1200 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="540" rx="48" fill="#F7F8FC"/>
+  <g transform="translate(90,110)">
+    <g transform="rotate(-8 120 120)">
+      <rect x="0" y="0" width="240" height="160" rx="28" fill="#E5E7EB"/>
+      <rect x="18" y="16" width="204" height="128" rx="18" fill="#F8FAFC"/>
+    </g>
+    <g transform="translate(260,24) rotate(-3 120 120)">
+      <rect x="0" y="0" width="240" height="160" rx="28" fill="#F4C6D7"/>
+      <rect x="18" y="16" width="204" height="128" rx="18" fill="#FCEEF4"/>
+    </g>
+    <g transform="translate(520,38) rotate(2 120 120)">
+      <rect x="0" y="0" width="240" height="160" rx="28" fill="#D4EE55"/>
+      <rect x="18" y="16" width="204" height="128" rx="18" fill="#F4FFB7"/>
+    </g>
+    <g transform="translate(780,20) rotate(7 120 120)">
+      <rect x="0" y="0" width="240" height="160" rx="28" fill="#6073FF"/>
+      <rect x="18" y="16" width="204" height="128" rx="18" fill="#B7C2FF"/>
+    </g>
+  </g>
+  <text x="82" y="420" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800">Silver. Blush. Citrus. Indigo.</text>
+  <text x="82" y="470" fill="#667085" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="500">Original color lineup artwork for this storefront build.</text>
+</svg>
