@@ -1,0 +1,12 @@
+title: Royal Technologies
+description: MacBooks and Microsoft 365 solutions in Guyana with fast local support and easy ordering.
+baseurl: "/royal-tech-gy"
+url: "https://taricohenry.github.io"
+permalink: pretty
+collections_dir: collections
+plugins: []
+macbook_url: "/neo/"
+office_url: "/office/"
+whatsapp_url: "https://wa.me/5920000000"
+facebook_url: "https://facebook.com/royaltechnologiesgy"
+email_address: "sales@royaltechgy.com"
