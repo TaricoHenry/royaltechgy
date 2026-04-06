@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Shared metadata and global assets for every page in the site. -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You | Office Subscriptions</title>
+  <meta name="description" content="Thank you for your Microsoft Office subscription request. We have received your details and will follow up soon." />
+  <meta name="theme-color" content="#08111f" />
+  <meta property="og:title" content="Thank You | Office Subscriptions" />
+  <meta property="og:description" content="Thank you for your Microsoft Office subscription request. We have received your details and will follow up soon." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Thank You | Office Subscriptions" />
+  <meta name="twitter:description" content="Thank you for your Microsoft Office subscription request. We have received your details and will follow up soon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/ms-office/assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Page-specific content is injected here by Jekyll. -->
+  <!-- Thank-you page keeps the same navigation pattern as the main landing page. -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/ms-office/">Royal Technologies</a>
+    <nav class="nav">
+      <a href="/ms-office/#highlights">Highlights</a>
+      <a href="/ms-office/#plans">Plans</a>
+      <a href="/ms-office/#workflow">How it works</a>
+      <a href="/ms-office/#faq">FAQ</a>
+      <a href="/ms-office/#checkout">Subscribe</a>
+    </nav>
+    <a class="header-cta" href="/ms-office/">Back to home</a>
+  </div>
+</header>
+
+<main>
+  <!-- Confirmation page reads the order ID from the URL and displays the
+       matching order details after a successful API lookup. -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="thank-you-wrap">
+        <div class="thank-you-card">
+          <p class="eyebrow">Request received</p>
+          <h1>Thank you for subscribing.</h1>
+          <p class="lead">
+            We’ve received your Microsoft Office subscription request successfully. Royal Technologies will contact you
+            within 24 hours to confirm your plan and complete setup.
+          </p>
+
+          <p id="thankYouStatus" class="form-status" role="status" aria-live="polite">
+            Loading your order details...
+          </p>
+
+          <div class="order-id-box">
+            Order ID: <strong id="orderId">—</strong>
+          </div>
+
+          <!-- These placeholders are filled in by the thank-you logic in main.js. -->
+          <div class="summary-card thank-you-summary">
+            <h3>Your subscription details</h3>
+
+            <div class="summary-row">
+              <span>Full name</span>
+              <strong id="summaryFullName">—</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Plan</span>
+              <strong id="summaryPlan">—</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Account type</span>
+              <strong id="summaryAccountType">—</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Price</span>
+              <strong id="summaryPrice">—</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Payment</span>
+              <strong id="summaryPayment">—</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Setup</span>
+              <strong id="summarySetupMethod">—</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Address</span>
+              <strong id="summaryaddress">—</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Notes</span>
+              <strong id="summaryNotes">—</strong>
+            </div>
+          </div>
+
+          <div class="thank-you-points">
+            <div class="info-panel">
+              <strong>What happens next</strong>
+              <p>We’ll review your request and message you with the next step for activation and payment confirmation.</p>
+            </div>
+
+            <div class="info-panel">
+              <strong>Setup support included</strong>
+              <p>Use your chosen setup method and we’ll guide you through activation as smoothly as possible.</p>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/ms-office/">Back to homepage</a>
+            <a class="btn btn-secondary" href="/ms-office/#plans">View plans</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Minimal footer for a clean exit path after form submission. -->
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div>
+      <strong>Royal Technologies</strong>
+      <p>Microsoft Office subscriptions with local support and guided setup.</p>
+    </div>
+    <a class="btn btn-secondary" href="/ms-office/">Home</a>
+  </div>
+</footer>
+
+  <script>
+    // Expose deploy-time values to the browser so the frontend can build the
+    // correct API and GitHub Pages URLs at runtime.
+    window.SITE_CONFIG = {
+      orderApiUrl: "https://us-central1-ms-office-2e691.cloudfunctions.net/api/v1/orders",
+      siteBaseUrl: "/ms-office"
+    };
+  </script>
+  <!-- Shared site behavior lives in the main frontend bundle. -->
+  <script src="/ms-office/assets/js/main.js"></script>
+</body>
+
+</html>
